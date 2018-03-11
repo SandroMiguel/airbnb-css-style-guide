@@ -300,7 +300,7 @@ Se precisar de utilizar um seletor ID (coisa que você não deve fazer!), ele nu
 
 ## Tradução
 
-  Este guia de estilo também está disponível noutros idiomas
+  Este guia de estilo também está disponível noutros idiomas:
 
   - ![id](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Indonesia.png) **Bahasa Indonesia**: [mazipan/css-style-guide](https://github.com/mazipan/css-style-guide)
   - ![tw](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png) **Chinese (Traditional)**: [ArvinH/css-style-guide](https://github.com/ArvinH/css-style-guide)
