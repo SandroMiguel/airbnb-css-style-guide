@@ -117,26 +117,28 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 
 ### OOCSS e BEM
 
-We encourage some combination of OOCSS and BEM for these reasons:
+Incentivamos algumas combinações de OOCSS e BEM por estas razões:
 
-  * It helps create clear, strict relationships between CSS and HTML
-  * It helps us create reusable, composable components
-  * It allows for less nesting and lower specificity
-  * It helps in building scalable stylesheets
+  * Ajuda a criar relações claras e estritas entre CSS e HTML
+  * Ajuda-nos a criar componentes reutilizáveis e que podem ser combinados
+  * Permite menor aninhamento e especificidade
+  * Ajuda na construção de folhas de estilo escaláveis
 
-**OOCSS**, or “Object Oriented CSS”, is an approach for writing CSS that encourages you to think about your stylesheets as a collection of “objects”: reusable, repeatable snippets that can be used independently throughout a website.
+**OOCSS**, ou “Object Oriented CSS”, é uma abordagem para escrita de CSS que o encoraja a pensar sobre as suas folhas de estilo como uma coleção de "objetos": *snippets* repetitivos reutilizáveis que podem ser usados de forma independente em todo o website.
 
-  * Nicole Sullivan's [OOCSS wiki](https://github.com/stubbornella/oocss/wiki)
-  * Smashing Magazine's [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+  * [OOCSS wiki](https://github.com/stubbornella/oocss/wiki) de Nicole Sullivan
+  
+  * [Introduction to OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/) de Smashing Magazine
 
-**BEM**, or “Block-Element-Modifier”, is a _naming convention_ for classes in HTML and CSS. It was originally developed by Yandex with large codebases and scalability in mind, and can serve as a solid set of guidelines for implementing OOCSS.
+**BEM**, ou “Block-Element-Modifier”, é uma _convenção de nomes_ para classes em HTML e CSS. Foi originalmente desenvolvido pela Yandex com grandes bases de código e escalabilidade em mente, e pode servir como um sólido conjunto de diretrizes para a implementação do OOCSS.
 
-  * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
-  * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+  * [BEM 101](https://css-tricks.com/bem-101/) de CSS Trick
+  * [Introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) de Harry Roberts
 
-We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
+Nós recomendamos um variante do BEM com “blocos” no formato *PascalCase*, que funciona particularmente bem quando o combinado com componentes (ex.: React). *Underscores* e *traços* continuam a ser utilizados para modificadores e filhos.
 
-**Example**
+
+**Exemplo**
 
 ```jsx
 // ListingCard.jsx
