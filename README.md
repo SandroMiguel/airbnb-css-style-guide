@@ -5,24 +5,24 @@
 ## Índice
 
 1. [Terminologia](#terminologia)
-    - [Declaração de regra](#rule-declaration)
-    - [Seletores](#selectors)
-    - [Propriedades](#properties)
+    - [Declaração de regra](#declaração-de-regra)
+    - [Seletores](#seletores)
+    - [Propriedades](#propriedades)
 1. [CSS](#css)
-    - [Formatação](#formatting)
-    - [Comentários](#comments)
-    - [OOCSS e BEM](#oocss-and-bem)
-    - [Seletores ID](#id-selectors)
+    - [Formatação](#formatação)
+    - [Comentários](#comentários)
+    - [OOCSS e BEM](#oocss-e-bem)
+    - [Seletores ID](#seletores-id)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
 1. [Sass](#sass)
-    - [Sintaxe](#syntax)
-    - [Ordenação](#ordering-of-property-declarations)
-    - [Variáveis](#variables)
+    - [Sintaxe](#sintaxe)
+    - [Ordenação](#ordenação-das-declarações-de-regra)
+    - [Variáveis](#variáveis)
     - [Mixins](#mixins)
-    - [Diretiva Extend](#extend-directive)
-    - [Seletores aninhados](#nested-selectors)
-1. [Tradução](#translation)
+    - [Diretiva Extend](#diretiva-extend)
+    - [Seletores aninhados](#seletores-aninhados)
+1. [Tradução](#tradução)
 
 ## Terminologia
 
@@ -211,7 +211,7 @@ Use `0` instead of `none` to specify that a style has no border.
 * Use the `.scss` syntax, never the original `.sass` syntax
 * Order your regular CSS and `@include` declarations logically (see below)
 
-### Ordering of property declarations
+### Ordenação das declarações de regra
 
 1. Property declarations
 
