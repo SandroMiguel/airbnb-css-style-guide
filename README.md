@@ -28,7 +28,7 @@
 
 ### Declaração da regra
 
-A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. Here's an example:
+A “declaração da regra” é o nome dado ao seletor (ou a um grupo de seletores) acompanhados de um grupo de propriedades. Segue um exemplo:
 
 ```css
 .listing {
@@ -39,7 +39,7 @@ A “rule declaration” is the name given to a selector (or a group of selector
 
 ### Seletores
 
-In a rule declaration, “selectors” are the bits that determine which elements in the DOM tree will be styled by the defined properties. Selectors can match HTML elements, as well as an element's class, ID, or any of its attributes. Here are some examples of selectors:
+Na declaraçao de um regra, os “seletores” são os bits que determinam quais elementos na árvore do DOM serão estilizados pelas propriedades definidas. Os seletores podem ser de elementos HTML, classes, ID ou qualquer um de seus atributos. Seguem alguns exemplos de seletores:
 
 ```css
 .my-element-class {
@@ -53,7 +53,7 @@ In a rule declaration, “selectors” are the bits that determine which element
 
 ### Propriedades
 
-Finally, properties are what give the selected elements of a rule declaration their style. Properties are key-value pairs, and a rule declaration can contain one or more property declarations. Property declarations look like this:
+Finalmente, as propriedades definem o estilos dos seletores. As propriedades são pares chave-valor, onde uma declaração da regra pode conter uma ou mais declarações de propriedades.
 
 ```css
 /* some selector */ {
@@ -62,13 +62,13 @@ Finally, properties are what give the selected elements of a rule declaration th
 }
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ voltar ao início](#table-of-contents)**
 
 ## CSS
 
 ### Formatação
 
-* Use soft tabs (2 spaces) for indentation
+* Use "soft tabs" (2 espaços) para identação.
 * Prefer dashes over camelCasing in class names.
   - Underscores and PascalCasing are okay if you are using BEM (see [OOCSS and BEM](#oocss-and-bem) below).
 * Do not use ID selectors
@@ -202,7 +202,7 @@ Use `0` instead of `none` to specify that a style has no border.
   border: 0;
 }
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ voltar ao início](#table-of-contents)**
 
 ## Sass
 
@@ -291,7 +291,7 @@ Again: **never nest ID selectors!**
 
 If you must use an ID selector in the first place (and you should really try not to), they should never be nested. If you find yourself doing this, you need to revisit your markup, or figure out why such strong specificity is needed. If you are writing well formed HTML and CSS, you should **never** need to do this.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ voltar ao início](#table-of-contents)**
 
 ## Tradução
 
@@ -309,4 +309,4 @@ If you must use an ID selector in the first place (and you should really try not
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [trungk18/css-style-guide](https://github.com/trungk18/css-style-guide)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [antoniofull/linee-guida-css](https://github.com/antoniofull/linee-guida-css)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ voltar ao início](#table-of-contents)**
