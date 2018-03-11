@@ -62,7 +62,7 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 }
 ```
 
-**[⬆ voltar ao início](#índice)**
+**[⬆ voltar ao início](#indice)**
 
 ## CSS
 
