@@ -62,7 +62,7 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 }
 ```
 
-**[⬆ voltar ao início](#indice)**
+**[⬆ voltar ao início](#Índice)**
 
 ## CSS
 
@@ -205,7 +205,7 @@ Use o `0` em vez de `none` para especificar que um estilo não tem borda.
   border: 0;
 }
 ```
-**[⬆ voltar ao início](#índice)**
+**[⬆ voltar ao início](#Índice)**
 
 ## Sass
 
