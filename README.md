@@ -296,7 +296,7 @@ Mais uma vez: **nunca agrupe seletores ID!**
 
 Se precisar de utilizar um seletor ID (coisa que você não deve fazer!), ele nunca deve ser agrupado. Se está fazer isso, é necessário rever o seu código ou descobrir por que é necessária tal especificidade. Se estiver a escrever HTML e CSS corretamente, **nunca** deverá ser necessário fazer isso!
 
-**[⬆ voltar ao início](#índice)**
+**[⬆ voltar ao início](#Índice)**
 
 ## Tradução
 
@@ -314,4 +314,4 @@ Se precisar de utilizar um seletor ID (coisa que você não deve fazer!), ele nu
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [trungk18/css-style-guide](https://github.com/trungk18/css-style-guide)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [antoniofull/linee-guida-css](https://github.com/antoniofull/linee-guida-css)
 
-**[⬆ voltar ao início](#índice)**
+**[⬆ voltar ao início](#Índice)**
