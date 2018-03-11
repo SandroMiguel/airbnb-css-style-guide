@@ -171,15 +171,16 @@ function ListingCard() {
 
 ### Seletores ID
 
-While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to your rule declarations, and they are not reusable.
+Embora seja possível selecionar elementos por ID no CSS, geralmente deve ser considerado um *anti-pattern*. Seletores ID introduzem um elevado nível de [especificidade](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) para aa declarações de regra e não são reutilizáveis.
 
 For more on this subject, read [CSS Wizardry's article](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) on dealing with specificity.
+Para mais informações sobre este assunto, leia o [artigo do CSS Wizardry](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) no tratamento da especificidade.
 
 ### JavaScript hooks
 
-Avoid binding to the same class in both your CSS and JavaScript. Conflating the two often leads to, at a minimum, time wasted during refactoring when a developer must cross-reference each class they are changing, and at its worst, developers being afraid to make changes for fear of breaking functionality.
+Evite vincular a mesma classe no CSS e no JavaScript. No mínimo, tal leva ao desperdício de tempo durante o *refactoring*, por exemplo, quando um programador deve fazer referência cruzada a cada classe que está a alterar e, no pior dos casos, leva os programadores a resistirem a fazer mudanças com receio de romper a funcionalidade.
 
-We recommend creating JavaScript-specific classes to bind to, prefixed with `.js-`:
+Recomendamos a criação de classes específicas para JavaScript, com o prefixo `.js-`:
 
 ```html
 <button class="btn btn-primary js-request-to-book">Request to Book</button>
@@ -187,7 +188,7 @@ We recommend creating JavaScript-specific classes to bind to, prefixed with `.js
 
 ### Border
 
-Use `0` instead of `none` to specify that a style has no border.
+Use o `0` em vez de `none` para especificar que um estilo não tem borda.
 
 **Incorreto**
 
@@ -210,14 +211,15 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ### Sintaxe
 
-* Use the `.scss` syntax, never the original `.sass` syntax
+* Use a sintaxe `.scss`, nunca a sintaxe original `.sass`
 * Order your regular CSS and `@include` declarations logically (see below)
+* Ordene o CSS e o `@include` com lógica (veja abaixo)
 
 ### Ordenação das declarações de regra
 
-1. Property declarations
+1. Declaração de propriedades
 
-    List all standard property declarations, anything that isn't an `@include` or a nested selector.
+    Listar todas as declarações de propriedades padrão, tudo o que não seja um `@include` ou um seletor aninhado.
 
     ```scss
     .btn-green {
@@ -227,9 +229,9 @@ Use `0` instead of `none` to specify that a style has no border.
     }
     ```
 
-2. `@include` declarations
+2. Declarações `@include`
 
-    Grouping `@include`s at the end makes it easier to read the entire selector.
+    Agrupar os `@include`s no final torna mais fácil a leitura de todo o seletor.
 
     ```scss
     .btn-green {
@@ -240,9 +242,10 @@ Use `0` instead of `none` to specify that a style has no border.
     }
     ```
 
-3. Nested selectors
+3. Seletores aninhados
 
     Nested selectors, _if necessary_, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
+    Os seletores aninhados, _se necessário_, são colocados no final e nada mais depois deles. Adicione um espaço entre a declaração de regra e os seletores aninhados, assim como entre os seletores aninhados adjacentes. Aplique as mesmas diretrizes acima para os seletores aninhados.
 
     ```scss
     .btn {
@@ -258,19 +261,19 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ### Variáveis
 
-Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. `$_my-variable`).
+Tenha preferência por nomes de variáveis em *dash-case* (ex.: `$my-variable`) em vez de *camelCase* ou *snake_case*. É aceitável adicionar um "underscore" como prefíxo nos nomes de variáveis que se destinam a ser usadas dentro do mesmo arquivo  (ex.: `$_my-variable`).
 
 ### Mixins
 
-Mixins should be used to DRY up your code, add clarity, or abstract complexity--in much the same way as well-named functions. Mixins that accept no arguments can be useful for this, but note that if you are not compressing your payload (e.g. gzip), this may contribute to unnecessary code duplication in the resulting styles.
+Os Mixins devem ser usados para implementar no código o princípio DRY, adicionar clareza ou abstrair-nos da complexidade, assim como as funções bem nomeadas. Os Mixins que não aceitam argumentos podem ser úteis, mas tenha atenção que se não compactar o seu *payload* (ex.: gzip) isto pode contribuir para duplicação de código desnecessário nos estilos resultantes.
 
 ### Diretiva Extend
 
-`@extend` should be avoided because it has unintuitive and potentially dangerous behavior, especially when used with nested selectors. Even extending top-level placeholder selectors can cause problems if the order of selectors ends up changing later (e.g. if they are in other files and the order the files are loaded shifts). Gzipping should handle most of the savings you would have gained by using `@extend`, and you can DRY up your stylesheets nicely with mixins.
+O `@extend` deve ser evitado porque possui um comportamento não intuitivo e perigoso, especialmente quando usado nos seletores aninhados. Mesmo extendendo os seletores *placeholder* de nível superior, isto pode causar problemas se a ordem dos seletores mudar mais tarde (ex.: se estiverem noutros arquivos e a ordem de carregamento alternar). Ao usar o Gzip terá a maioria das economias que teria ganho usando `@extend`, e, além disso, pode tirar partido do princípio DRY através dos mixins.
 
 ### Seletores aninhados
 
-**Do not nest selectors more than three levels deep!**
+**Não use seletores aninhados com mais de três níveis de profundidade!**
 
 ```scss
 .page-container {
@@ -282,16 +285,16 @@ Mixins should be used to DRY up your code, add clarity, or abstract complexity--
 }
 ```
 
-When selectors become this long, you're likely writing CSS that is:
+Quando os seletores se tornam assim tão longos, provavelmente estará a escrever CSS assim:
 
-* Strongly coupled to the HTML (fragile) *—OR—*
-* Overly specific (powerful) *—OR—*
-* Not reusable
+* Fortemente aclopado ao HTML (frágil) *—OU—*
+* Excessivamente específico (poderoso) *—OU—*
+* Não reutilizável
 
 
-Again: **never nest ID selectors!**
+Mais uma vez: **nunca agrupe seletores ID!**
 
-If you must use an ID selector in the first place (and you should really try not to), they should never be nested. If you find yourself doing this, you need to revisit your markup, or figure out why such strong specificity is needed. If you are writing well formed HTML and CSS, you should **never** need to do this.
+Se precisar de utilizar um seletor ID (coisa que você não deve fazer!), ele nunca deve ser agrupado. Se está fazer isso, é necessário rever o seu código ou descobrir por que é necessária tal especificidade. Se estiver a escrever HTML e CSS corretamente, **nunca** deverá ser necessário fazer isso!
 
 **[⬆ voltar ao início](#table-of-contents)**
 
