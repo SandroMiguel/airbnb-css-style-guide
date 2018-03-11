@@ -1,4 +1,4 @@
-# Airbnb CSS / Sass Styleguide
+# Guia de estilo CSS / Sass da Airbnb
 
 *A mostly reasonable approach to CSS and Sass*
 
