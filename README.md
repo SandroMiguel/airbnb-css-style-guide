@@ -62,7 +62,7 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 }
 ```
 
-**[⬆ voltar ao início](#table-of-contents)**
+**[⬆ voltar ao início](#índice)**
 
 ## CSS
 
@@ -205,7 +205,7 @@ Use o `0` em vez de `none` para especificar que um estilo não tem borda.
   border: 0;
 }
 ```
-**[⬆ voltar ao início](#table-of-contents)**
+**[⬆ voltar ao início](#índice)**
 
 ## Sass
 
@@ -296,7 +296,7 @@ Mais uma vez: **nunca agrupe seletores ID!**
 
 Se precisar de utilizar um seletor ID (coisa que você não deve fazer!), ele nunca deve ser agrupado. Se está fazer isso, é necessário rever o seu código ou descobrir por que é necessária tal especificidade. Se estiver a escrever HTML e CSS corretamente, **nunca** deverá ser necessário fazer isso!
 
-**[⬆ voltar ao início](#table-of-contents)**
+**[⬆ voltar ao início](#índice)**
 
 ## Tradução
 
@@ -314,4 +314,4 @@ Se precisar de utilizar um seletor ID (coisa que você não deve fazer!), ele nu
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnamese**: [trungk18/css-style-guide](https://github.com/trungk18/css-style-guide)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Italy.png) **Italian**: [antoniofull/linee-guida-css](https://github.com/antoniofull/linee-guida-css)
 
-**[⬆ voltar ao início](#table-of-contents)**
+**[⬆ voltar ao início](#índice)**
