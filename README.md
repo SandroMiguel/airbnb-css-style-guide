@@ -1,32 +1,32 @@
 # Guia de estilo CSS / Sass da Airbnb
 
-*A mostly reasonable approach to CSS and Sass*
+*Uma abordagem mais razoável para CSS e Sass*
 
-## Table of Contents
+## Índice
 
-1. [Terminology](#terminology)
-    - [Rule Declaration](#rule-declaration)
-    - [Selectors](#selectors)
-    - [Properties](#properties)
+1. [Terminologia](#terminology)
+    - [Declaração da regra](#rule-declaration)
+    - [Seletores](#selectors)
+    - [Propriedades](#properties)
 1. [CSS](#css)
-    - [Formatting](#formatting)
-    - [Comments](#comments)
-    - [OOCSS and BEM](#oocss-and-bem)
-    - [ID Selectors](#id-selectors)
+    - [Formatação](#formatting)
+    - [Comentários](#comments)
+    - [OOCSS e BEM](#oocss-and-bem)
+    - [Seletores ID](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
 1. [Sass](#sass)
-    - [Syntax](#syntax)
-    - [Ordering](#ordering-of-property-declarations)
-    - [Variables](#variables)
+    - [Sintaxe](#syntax)
+    - [Ordenação](#ordering-of-property-declarations)
+    - [Variáveis](#variables)
     - [Mixins](#mixins)
-    - [Extend directive](#extend-directive)
-    - [Nested selectors](#nested-selectors)
-1. [Translation](#translation)
+    - [Diretiva Extend](#extend-directive)
+    - [Seletores aninhados](#nested-selectors)
+1. [Tradução](#translation)
 
-## Terminology
+## Terminologia
 
-### Rule declaration
+### Declaração da regra
 
 A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. Here's an example:
 
@@ -37,7 +37,7 @@ A “rule declaration” is the name given to a selector (or a group of selector
 }
 ```
 
-### Selectors
+### Seletores
 
 In a rule declaration, “selectors” are the bits that determine which elements in the DOM tree will be styled by the defined properties. Selectors can match HTML elements, as well as an element's class, ID, or any of its attributes. Here are some examples of selectors:
 
@@ -51,7 +51,7 @@ In a rule declaration, “selectors” are the bits that determine which element
 }
 ```
 
-### Properties
+### Propriedades
 
 Finally, properties are what give the selected elements of a rule declaration their style. Properties are key-value pairs, and a rule declaration can contain one or more property declarations. Property declarations look like this:
 
@@ -66,7 +66,7 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ## CSS
 
-### Formatting
+### Formatação
 
 * Use soft tabs (2 spaces) for indentation
 * Prefer dashes over camelCasing in class names.
@@ -107,7 +107,7 @@ Finally, properties are what give the selected elements of a rule declaration th
 }
 ```
 
-### Comments
+### Comentários
 
 * Prefer line comments (`//` in Sass-land) to block comments.
 * Prefer comments on their own line. Avoid end-of-line comments.
@@ -115,7 +115,7 @@ Finally, properties are what give the selected elements of a rule declaration th
   - Uses of z-index
   - Compatibility or browser-specific hacks
 
-### OOCSS and BEM
+### OOCSS e BEM
 
 We encourage some combination of OOCSS and BEM for these reasons:
 
@@ -167,7 +167,7 @@ function ListingCard() {
   * `.ListingCard__title` is an “element” and represents a descendant of `.ListingCard` that helps compose the block as a whole.
   * `.ListingCard--featured` is a “modifier” and represents a different state or variation on the `.ListingCard` block.
 
-### ID selectors
+### Seletores ID
 
 While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to your rule declarations, and they are not reusable.
 
@@ -206,7 +206,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ## Sass
 
-### Syntax
+### Sintaxe
 
 * Use the `.scss` syntax, never the original `.sass` syntax
 * Order your regular CSS and `@include` declarations logically (see below)
@@ -254,7 +254,7 @@ Use `0` instead of `none` to specify that a style has no border.
     }
     ```
 
-### Variables
+### Variáveis
 
 Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. `$_my-variable`).
 
@@ -262,11 +262,11 @@ Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_
 
 Mixins should be used to DRY up your code, add clarity, or abstract complexity--in much the same way as well-named functions. Mixins that accept no arguments can be useful for this, but note that if you are not compressing your payload (e.g. gzip), this may contribute to unnecessary code duplication in the resulting styles.
 
-### Extend directive
+### Diretiva Extend
 
 `@extend` should be avoided because it has unintuitive and potentially dangerous behavior, especially when used with nested selectors. Even extending top-level placeholder selectors can cause problems if the order of selectors ends up changing later (e.g. if they are in other files and the order the files are loaded shifts). Gzipping should handle most of the savings you would have gained by using `@extend`, and you can DRY up your stylesheets nicely with mixins.
 
-### Nested selectors
+### Seletores aninhados
 
 **Do not nest selectors more than three levels deep!**
 
@@ -293,7 +293,7 @@ If you must use an ID selector in the first place (and you should really try not
 
 **[⬆ back to top](#table-of-contents)**
 
-## Translation
+## Tradução
 
   This style guide is also available in other languages:
 
