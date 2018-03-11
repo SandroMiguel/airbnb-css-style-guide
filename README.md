@@ -4,8 +4,8 @@
 
 ## Índice
 
-1. [Terminologia](#terminology)
-    - [Declaração da regra](#rule-declaration)
+1. [Terminologia](#terminologia)
+    - [Declaração de regra](#rule-declaration)
     - [Seletores](#selectors)
     - [Propriedades](#properties)
 1. [CSS](#css)
@@ -26,9 +26,9 @@
 
 ## Terminologia
 
-### Declaração da regra
+### Declaração de regra
 
-A “declaração da regra” é o nome dado ao seletor (ou a um grupo de seletores) acompanhados de um grupo de propriedades. Segue um exemplo:
+A “declaração de regra” é o nome dado ao seletor (ou a um grupo de seletores) acompanhados de um grupo de propriedades. Segue um exemplo:
 
 ```css
 .listing {
@@ -53,7 +53,7 @@ Na declaraçao de um regra, os “seletores” são os bits que determinam quais
 
 ### Propriedades
 
-Finalmente, as propriedades definem o estilos dos seletores. As propriedades são pares chave-valor, onde uma declaração da regra pode conter uma ou mais declarações de propriedades.
+Finalmente, as propriedades definem o estilos dos seletores. As propriedades são pares chave-valor, onde uma declaração de regra pode conter uma ou mais declarações de propriedades.
 
 ```css
 /* some selector */ {
@@ -68,17 +68,17 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 
 ### Formatação
 
-* Use "soft tabs" (2 espaços) para identação.
-* Prefer dashes over camelCasing in class names.
-  - Underscores and PascalCasing are okay if you are using BEM (see [OOCSS and BEM](#oocss-and-bem) below).
-* Do not use ID selectors
-* When using multiple selectors in a rule declaration, give each selector its own line.
-* Put a space before the opening brace `{` in rule declarations
-* In properties, put a space after, but not before, the `:` character.
-* Put closing braces `}` of rule declarations on a new line
-* Put blank lines between rule declarations
+* Use *soft tabs* (2 espaços) para identação.
+* Prefira dashes `(-)` em vez de camelCasing nos nomes das classes.
+  - Underscores `(_)` e PascalCasing são aceites no caso de usar a metodologia BEM (veja [OOCSS e BEM](#oocss-and-bem) abaixo).
+* Não use seletores ID.
+* Quando usar múltiplos seletores numa declaração de regra, coloque um em cada linha.
+* Coloque um espaço antes da chaveta de abertura `{` na declaração de regras.
+* Nas propriedades, coloque um espaço depois, mas não antes do caractere `:`.
+* Coloque a chaveta de fechamento `}` de uma declaração de regra numa nova linha.
+* Coloque linhas em branco entre declarações de regra.
 
-**Bad**
+**Incorreto**
 
 ```css
 .avatar{
@@ -92,7 +92,7 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 }
 ```
 
-**Good**
+**Correto**
 
 ```css
 .avatar {
@@ -109,11 +109,11 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 
 ### Comentários
 
-* Prefer line comments (`//` in Sass-land) to block comments.
-* Prefer comments on their own line. Avoid end-of-line comments.
-* Write detailed comments for code that isn't self-documenting:
-  - Uses of z-index
-  - Compatibility or browser-specific hacks
+* Prefira comentários de linha (`//` em Sass) a comentários em bloco.
+* Prefira comentários na sua própria linha. Evite comentários no final da linha.
+* Escreva comentários detalhados para código que seja auto-documentados:
+  - Usos do z-index
+  - Compatibilidade ou *hacks* específicos de *browsers*
 
 ### OOCSS e BEM
 
@@ -187,7 +187,7 @@ We recommend creating JavaScript-specific classes to bind to, prefixed with `.js
 
 Use `0` instead of `none` to specify that a style has no border.
 
-**Bad**
+**Incorreto**
 
 ```css
 .foo {
@@ -195,7 +195,7 @@ Use `0` instead of `none` to specify that a style has no border.
 }
 ```
 
-**Good**
+**Correto**
 
 ```css
 .foo {
