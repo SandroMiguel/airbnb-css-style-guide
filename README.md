@@ -135,7 +135,7 @@ Incentivamos algumas combinações de OOCSS e BEM por estas razões:
   * [BEM 101](https://css-tricks.com/bem-101/) de CSS Trick
   * [Introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) de Harry Roberts
 
-Nós recomendamos um variante do BEM com “blocos” no formato *PascalCase*, que funciona particularmente bem quando o combinado com componentes (ex.: React). *Underscores* e *traços* continuam a ser utilizados para modificadores e filhos.
+Recomendamos uma variante do BEM com os “blocos” no formato *PascalCase*, que funciona particularmente bem quando combinado com componentes (ex.: React). *Underscores* e *traços* continuam a ser utilizados para modificadores e filhos.
 
 
 **Exemplo**
@@ -165,9 +165,9 @@ function ListingCard() {
 .ListingCard__content { }
 ```
 
-  * `.ListingCard` is the “block” and represents the higher-level component
-  * `.ListingCard__title` is an “element” and represents a descendant of `.ListingCard` that helps compose the block as a whole.
-  * `.ListingCard--featured` is a “modifier” and represents a different state or variation on the `.ListingCard` block.
+  * `.ListingCard` é o “bloco” e representa o componente de nível mais alto.
+  * `.ListingCard__title` é um “elemento” e representa o descendente de `.ListingCard` que ajuda a compor o bloco como um todo.
+  * `.ListingCard--featured` é o “modificador” e representa um estado diferente ou variação no bloco `.ListingCard`.
 
 ### Seletores ID
 
