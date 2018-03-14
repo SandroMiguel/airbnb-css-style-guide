@@ -173,8 +173,7 @@ function ListingCard() {
 
 Embora seja possível selecionar elementos por ID no CSS, geralmente deve ser considerado um *anti-pattern*. Seletores ID introduzem um elevado nível de [especificidade](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) para aa declarações de regra e não são reutilizáveis.
 
-For more on this subject, read [CSS Wizardry's article](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) on dealing with specificity.
-Para mais informações sobre este assunto, leia o [artigo do CSS Wizardry](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) no tratamento da especificidade.
+Para mais informações sobre este assunto, leia o artigo [CSS Wizardry](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) sobre o tratamento da especificidade.
 
 ### JavaScript hooks
 
