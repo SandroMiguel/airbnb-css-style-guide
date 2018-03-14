@@ -111,7 +111,7 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 
 * Prefira comentários de linha (`//` em Sass) a comentários em bloco.
 * Prefira comentários na sua própria linha. Evite comentários no final da linha.
-* Escreva comentários detalhados para código que seja auto-documentados:
+* Escreva comentários detalhados no código que não esteja suficientemente explícito:
   - Usos do z-index
   - Compatibilidade ou *hacks* específicos de *browsers*
 
