@@ -285,7 +285,7 @@ O `@extend` deve ser evitado porque possui um comportamento não intuitivo e per
 
 Quando os seletores se tornam assim tão longos, provavelmente estará a escrever CSS assim:
 
-* Fortemente aclopado ao HTML (frágil) *—OU—*
+* Fortemente acoplado ao HTML (frágil) *—OU—*
 * Excessivamente específico (poderoso) *—OU—*
 * Não reutilizável
 
