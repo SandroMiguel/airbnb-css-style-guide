@@ -292,7 +292,7 @@ Quando os seletores se tornam assim tão longos, provavelmente estará a escreve
 
 Mais uma vez: **nunca agrupe seletores ID!**
 
-Se precisar de utilizar um seletor ID (coisa que você não deve fazer!), ele nunca deve ser agrupado. Se está fazer isso, é necessário rever o seu código ou descobrir por que é necessária tal especificidade. Se estiver a escrever HTML e CSS corretamente, **nunca** deverá ser necessário fazer isso!
+Se precisar de utilizar um seletor ID (algo que não deve fazer!), ele nunca deve ser agrupado. Se tal acontecer, é necessário rever o código ou descobrir por que é necessária tal especificidade. Ao escrever corretamente HTML e CSS, **nunca** deverá ser necessário agrupar seletores ID!
 
 **[⬆ voltar ao início](#Índice)**
 
