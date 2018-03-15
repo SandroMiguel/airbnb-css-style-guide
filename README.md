@@ -243,7 +243,6 @@ Use o `0` em vez de `none` para especificar que um estilo não tem borda.
 
 3. Seletores aninhados
 
-    Nested selectors, _if necessary_, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
     Os seletores aninhados, _se necessário_, são colocados no final e nada mais depois deles. Adicione um espaço entre a declaração de regra e os seletores aninhados, assim como entre os seletores aninhados adjacentes. Aplique as mesmas diretrizes acima para os seletores aninhados.
 
     ```scss
