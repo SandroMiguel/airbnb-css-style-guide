@@ -211,7 +211,6 @@ Use o `0` em vez de `none` para especificar que um estilo não tem borda.
 ### Sintaxe
 
 * Use a sintaxe `.scss`, nunca a sintaxe original `.sass`
-* Order your regular CSS and `@include` declarations logically (see below)
 * Ordene o CSS e o `@include` com lógica (veja abaixo)
 
 ### Ordenação das declarações de regra
