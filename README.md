@@ -70,7 +70,7 @@ Finalmente, as propriedades definem o estilos dos seletores. As propriedades sã
 
 * Use *soft tabs* (2 espaços) para identação.
 * Prefira dashes `(-)` em vez de camelCasing nos nomes das classes.
-  - Underscores `(_)` e PascalCasing são aceites no caso de usar a metodologia BEM (veja [OOCSS e BEM](#oocss-and-bem) abaixo).
+  - Underscores `(_)` e PascalCasing são aceitos no caso de usar a metodologia BEM (veja [OOCSS e BEM](#oocss-and-bem) abaixo).
 * Não use seletores ID.
 * Quando usar múltiplos seletores numa declaração de regra, coloque um em cada linha.
 * Coloque um espaço antes da chaveta de abertura `{` na declaração de regras.
